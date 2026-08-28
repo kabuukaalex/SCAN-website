@@ -105,8 +105,12 @@
 
 <section class="section" id="volunteer">
  <div class="wrap split form-section">
-  <div><span class="eyebrow">VOLUNTEER</span><h2>Bring your skills to SCAN.</h2><p>Use this form as a simple front-end intake. Connect it to an email/form service before publishing for real submissions.</p></div>
-  <form onsubmit="submitDemo(event,'Volunteer application received. Connect this form to a form service before going live.')">
+  <div><span class="eyebrow">VOLUNTEER</span><h2>Bring your skills to SCAN.</h2><p>Complete this form and your application will be sent directly to the SCAN email address.</p></div>
+  <form action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST">
+   <input type="hidden" name="_subject" value="New SCAN Volunteer Application">
+   <input type="hidden" name="_template" value="table">
+   <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=volunteer#volunteer">
+   <input type="hidden" name="_url" value="https://scan-website.pages.dev/#volunteer">
    <label>Full name<input required name="name"></label>
    <label>Email<input required type="email" name="email"></label>
    <label>Area of interest<select name="area"><option>Youth empowerment</option><option>Community health</option><option>Education</option><option>Agriculture & livelihoods</option><option>Women & inclusion</option><option>Environment</option></select></label>
@@ -127,13 +131,17 @@
  <div class="wrap"><span class="eyebrow">CONTACT</span><h2>Let's create change together.</h2>
   <div class="contact-grid">
    <div><span>📍</span><h3>Location</h3><p>Ssembabule District, Uganda</p></div>
-   <div><span>✉️</span><h3>Email</h3><p>Kabuukaalex4@gmail.com</p><small>Placeholder — replace with official email.</small></div>
-   <div><span>📞</span><h3>Phone</h3><p>+256 708507895,075548994,0791268201</p><small>Placeholder — replace with official number.</small></div>
+   <div><span>✉️</span><h3>Email</h3><p><a href="mailto:Kabuukaalex4@gmail.com">Kabuukaalex4@gmail.com</a></p></div>
+   <div><span>📞</span><h3>Phone</h3><p><a href="tel:+256708507895">0708507895</a><br><a href="tel:+256755488994">0755488994</a><br><a href="tel:+256791268201">0791268201</a></p></div>
   </div>
-  <form class="contact-form" onsubmit="submitDemo(event,'Thank you. Your message is ready to be connected to SCAN email.')">
-   <div class="form-row"><label>Name<input required></label><label>Email<input required type="email"></label></div>
-   <label>Message<textarea required rows="5"></textarea></label>
-   <button class="btn primary">Send message →</button>
+  <form class="contact-form" action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST">
+   <input type="hidden" name="_subject" value="New SCAN Contact Message">
+   <input type="hidden" name="_template" value="table">
+   <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=contact#contact">
+   <input type="hidden" name="_url" value="https://scan-website.pages.dev/#contact">
+   <div class="form-row"><label>Name<input required name="name"></label><label>Email<input required type="email" name="email"></label></div>
+   <label>Message<textarea required rows="5" name="message"></textarea></label>
+   <button class="btn primary" type="submit">Send message →</button>
   </form>
  </div>
 </section>
@@ -147,7 +155,7 @@ const menu=document.querySelector('.menu'), nav=document.querySelector('nav');
 menu.onclick=()=>nav.classList.toggle('open');
 document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
 window.addEventListener('scroll',()=>document.getElementById('header').classList.toggle('scrolled',scrollY>20));
-function submitDemo(e,msg){e.preventDefault();const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),4500);}
+const params=new URLSearchParams(location.search); if(params.get('submitted')){const t=document.getElementById('toast'); t.textContent='Thank you. Your submission has been sent to SCAN.'; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),5000);}
 </script>
 </body>
 </html>
