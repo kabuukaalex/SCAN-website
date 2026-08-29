@@ -50,4 +50,17 @@
     letter-spacing: 1px;
     box-sizing: border-box;
   }
-  
+  .form-group, .input-wrapper, .field {
+  margin-bottom: 12px !important; /* tighter */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px !important; /* controls space between ALL fields */
+}
+
+label {
+  margin-bottom: 4px !important;
+  display: block;
+}
