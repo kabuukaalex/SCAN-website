@@ -24,7 +24,7 @@
   margin: 0 auto 12px !important;
   border: 3px solid #0b6330;
 }
-/* Make section links work properly with sticky header */
+/* Make section links work */
 #volunteer,
 #donate,
 #partner,
@@ -35,7 +35,9 @@
 #programmes,
 #impact,
 #stories {
-  scroll-margin-top: 90px;
+    scroll-margin-top: 90px;
+}
+
 .org-name-bar {
     width: 100%;
     background: #0b4d2b;
@@ -46,23 +48,22 @@
     font-weight: 700;
     letter-spacing: 1px;
     box-sizing: border-box;
-  }
-  .form-group, .input-wrapper, .field {
-  margin-bottom: 12px !important; /* tighter */
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px !important; /* controls space between ALL fields */
+/* TIGHT FORM - FINAL FIX */
+.form-group,
+.input-wrapper,
+.field {
+    margin-bottom: 8px !important;
 }
 
-label 
-    form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px !important;
-    }{
-  margin-bottom: 4px !important;
-  display: block;
+#volunteer form {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+label {
+    margin-bottom: 4px !important;
+    display: block;
 }
