@@ -33,3 +33,14 @@
 .form-group {
     margin-bottom: 35px;
 }
+.org-name-bar {
+    width: 100%;
+    background: #0b4d2b;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+  }
