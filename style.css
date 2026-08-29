@@ -36,9 +36,6 @@
 #impact,
 #stories {
   scroll-margin-top: 90px;
-      .form-group {
-    margin-bottom: 25px;
-}
 .org-name-bar {
     width: 100%;
     background: #0b4d2b;
@@ -60,7 +57,12 @@ form {
   gap: 14px !important; /* controls space between ALL fields */
 }
 
-label {
+label 
+    form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px !important;
+    }{
   margin-bottom: 4px !important;
   display: block;
 }
