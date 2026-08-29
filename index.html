@@ -191,38 +191,34 @@
       <p>Complete this form and your application will be sent directly to the SCAN email address.</p>
     </div>
 
-      <form action="https://formsubmit.co/Kabuukaalex4@gmail.com" style="display:flex; flex-direction:column; gap:8px !important;">
-      <input type="hidden" name="_subject" value="New SCAN Volunteer Application">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=volunteer#volunteer">
-      <input type="hidden" name="_url" value="https://scan-website.pages.dev/#volunteer">
-        <label>
-     </label>Full names
-      <label style="margin-bottom:8px !important; display:flex; flex-direction:column; gap:4px;">
-      <input required name="name">
-      </label>
-      <label>Email
-      <label style="margin-bottom:8px !important; display:flex; flex-direction:column; gap:4px;">
-        <input required type="email" name="email">
-       </label>
-        <label> Area of interest 
-        <label style="margin-bottom:8px !important; display:flex; flex-direction:column; gap:4px;">
-        <select name="area">
-          <option>Youth empowerment</option>
-          <option>Community health</option>
-          <option>Education</option>
-          <option>Agriculture & livelihoods</option>
-          <option>Women & inclusion</option>
-          <option>Environment</option>
-        </select>
-      </label>
-          <label>mesaage
-      <label style="margin-bottom:8px !important; display:flex; flex-direction:column; gap:4px;">
-        <textarea name="message" rows="4" placeholder="Tell us briefly how you would like to help"></textarea>
-      </label>
-         <button class="btn primary" type="submit">Submit interest →</button>
-    </form>
-  </div>
+      <form action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST" style="display:flex; flex-direction:column; gap:12px;">
+  <input type="hidden" name="_subject" value="New SCAN Volunteer">
+  <input type="hidden" name="_template" value="table">
+  
+  <label style="display:flex; flex-direction:column; gap:6px; margin:0 !important; font-weight:600; font-size:14px;">Full names
+    <input required name="name" style="padding:12px; border:1px solid #ccc; border-radius:8px; width:100%; box-sizing:border-box; margin:0;">
+  </label>
+
+  <label style="display:flex; flex-direction:column; gap:6px; margin:0 !important; font-weight:600; font-size:14px;">Email
+    <input required type="email" name="email" style="padding:12px; border:1px solid #ccc; border-radius:8px; width:100%; box-sizing:border-box; margin:0;">
+  </label>
+
+  <label style="display:flex; flex-direction:column; gap:6px; margin:0 !important; font-weight:600; font-size:14px;">Area of interest
+    <select name="area" style="padding:12px; border:1px solid #ccc; border-radius:8px; width:100%; box-sizing:border-box; margin:0;">
+      <option>Youth empowerment</option>
+      <option>Community health</option>
+      <option>Education</option>
+      <option>Agriculture & livelihoods</option>
+      <option>Women & inclusion</option>
+    </select>
+  </label>
+
+  <label style="display:flex; flex-direction:column; gap:6px; margin:0 !important; font-weight:600; font-size:14px;">Message
+    <textarea name="message" placeholder="Tell us briefly how you would like to help" style="padding:12px; border:1px solid #ccc; border-radius:8px; width:100%; min-height:90px; box-sizing:border-box; margin:0;"></textarea>
+  </label>
+
+  <button type="submit" style="background:#0b6330; color:white; padding:14px; border:none; border-radius:8px; font-weight:700; margin-top:8px;">Submit application</button>
+      </form>
  </section>
       <section class="section soft" id="donate">
   <div class="wrap split">
