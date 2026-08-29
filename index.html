@@ -122,46 +122,65 @@
  <div class="action-box"><a class="btn white" href="#contact">Become a partner</a><a class="btn outline-white" href="#volunteer">Volunteer</a><a class="btn outline-white" href="#donate">Support our work</a></div></div>
 </section>
 
-<section class="section" id="volunteer">
- <div class="wrap split form-section">
-  <div><span class="eyebrow">VOLUNTEER</span><h2>Bring your skills to SCAN.</h2><p>Complete this form and your application will be sent directly to the SCAN email address.</p></div>
-  <form action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST">
-   <input type="hidden" name="_subject" value="New SCAN Volunteer Application">
-   <input type="hidden" name="_template" value="table">
-   <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=volunteer#volunteer">
-   <input type="hidden" name="_url" value="https://scan-website.pages.dev/#volunteer">
-   <label>Full name<input required name="name"></label>
-   <label>Email<input required type="email" name="email"></label>
-   <label>Area of interest<select name="area"><option>Youth empowerment</option><option>Community health</option><option>Education</option><option>Agriculture & livelihoods</option><option>Women & inclusion</option><option>Environment</option></select></label>
-   <label>Message<textarea name="message" rows="4" placeholder="Tell us briefly how you would like to help"></textarea></label>
-   <button class="btn primary" type="submit">Submit interest →</button>
-  </form>
- </div>
-</section>
+<<section class="section" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">CONTACT</span>
+    <h2>Let's create change together.</h2>
 
-<section class="section soft" id="donate">
- <div class="wrap split">
-  <div><span class="eyebrow">SUPPORT SCAN</span><h2>Every contribution can strengthen local action.</h2><p>Donation details are intentionally left blank until SCAN has an official organisational account. Never publish a personal account as an NGO donation account.</p></div>
-  <div class="donation-box"><h3>Donation information</h3><p><b>Bank / mobile money:</b> To be added</p><p><b>Account name:</b> To be added</p><p><b>Reference:</b> SCAN support</p><small>Add verified organisational payment details only after the account is established.</small></div>
- </div>
-</section>
+    <div class="contact-grid">
+      <div>
+        <span>📍</span>
+        <h3>Location</h3>
+        <p>Ssembabule District, Uganda</p>
+      </div>
 
-<section class="section" id="contact">
- <div class="wrap"><span class="eyebrow">CONTACT</span><h2>Let's create change together.</h2>
-  <div class="contact-grid">
-   <div><span>📍</span><h3>Location</h3><p>Ssembabule District, Uganda</p></div>
-   <div><span>✉️</span><h3>Email</h3><p><a href="mailto:Kabuukaalex4@gmail.com">Kabuukaalex4@gmail.com</a></p></div>
-   <div><span>📞</span><h3>Phone</h3><p><a href="tel:+256708507895">0708507895</a><br><a href="tel:+256755488994">0755488994</a><br><a href="tel:+256791268201">0791268201</a></p></div>
+      <div>
+        <span>✉️</span>
+        <h3>Email</h3>
+        <p><a href="mailto:Kabuukaalex4@gmail.com">Kabuukaalex4@gmail.com</a></p>
+      </div>
+
+      <div>
+        <span>📞</span>
+        <h3>Phone</h3>
+        <p>
+          <a href="tel:+256708507895">0708507895</a><br>
+          <a href="tel:+256755488994">0755488994</a><br>
+          <a href="tel:+256791268201">0791268201</a>
+        </p>
+      </div>
+
+      <div>
+        <span>💬</span>
+        <h3>WhatsApp</h3>
+        <p>
+          <a class="btn primary" 
+             href="https://wa.me/256708507895?text=Hello%20SCAN%2C%20I%20would%20like%20to%20get%20in%20touch." 
+             target="_blank" 
+             rel="noopener">
+            Chat on WhatsApp →
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New SCAN Contact Message">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=contact#contact">
+      <input type="hidden" name="_url" value="https://scan-website.pages.dev/#contact">
+
+      <div class="form-row">
+        <label>Name<input required name="name"></label>
+        <label>Email<input required type="email" name="email"></label>
+      </div>
+
+      <label>Message<textarea required rows="5" name="message"></textarea></label>
+
+      <button class="btn primary" type="submit">Send message →</button>
+    </form>
   </div>
-  <form class="contact-form" action="https://formsubmit.co/Kabuukaalex4@gmail.com" method="POST">
-   <input type="hidden" name="_subject" value="New SCAN Contact Message">
-   <input type="hidden" name="_template" value="table">
-   <input type="hidden" name="_next" value="https://scan-website.pages.dev/?submitted=contact#contact">
-   <input type="hidden" name="_url" value="https://scan-website.pages.dev/#contact">
-   <div class="form-row"><label>Name<input required name="name"></label><label>Email<input required type="email" name="email"></label></div>
-   <label>Message<textarea required rows="5" name="message"></textarea></label>
-   <button class="btn primary" type="submit">Send message →</button>
-  </form>
+</section>
  </div>
 </section>
 </main>
