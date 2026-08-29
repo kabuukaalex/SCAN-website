@@ -11,3 +11,16 @@
   margin: 0 auto 12px !important;
   border: 3px solid #0b6330;
 }
+/* Make section links work properly with sticky header */
+#volunteer,
+#donate,
+#partner,
+#contact,
+#get-involved,
+#about,
+#leadership,
+#programmes,
+#impact,
+#stories {
+  scroll-margin-top: 90px;
+                                                                                                }
