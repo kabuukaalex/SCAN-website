@@ -358,3 +358,34 @@
     © 2026 SCAN. Proposed organisation — update registration status after approval.
   </div>
 </footer>
+</main>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/256708507895?text=Hello%20SCAN%2C%20I%20would%20like%20to%20get%20in%20touch." 
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener"
+   aria-label="Chat with SCAN on WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28" fill="#fff">
+    <path d="M16.004 2.001c-7.713 0-13.977 6.264-13.977 13.977 0 2.465.644 4.864 1.866 6.981L2 30l7.244-1.896A13.93 13.93 0 0 0 16.004 29.955c7.713 0 13.977-6.264 13.977-13.977S23.717 2.001 16.004 2.001zm0 25.56a11.55 11.55 0 0 1-5.887-1.61l-.422-.25-4.295 1.125 1.146-4.187-.274-.43a11.54 11.54 0 0 1-1.77-6.153c0-6.38 5.193-11.573 11.573-11.573s11.573 5.193 11.573 11.573-5.193 11.573-11.573 11.573zm6.35-8.67c-.347-.174-2.054-1.014-2.373-1.13-.319-.116-.551-.174-.783.174-.232.347-.899 1.13-1.102 1.362-.203.232-.406.261-.753.087-.347-.174-1.465-.54-2.79-1.72-1.032-.92-1.728-2.056-1.93-2.403-.203-.347-.022-.535.152-.708.156-.155.347-.406.52-.609.174-.203.232-.347.347-.579.116-.232.058-.435-.029-.609-.087-.174-.783-1.886-1.073-2.583-.282-.678-.57-.586-.783-.597l-.667-.012c-.232 0-.609.087-.928.435s-1.218 1.19-1.218 2.903 1.247 3.366 1.42 3.598c.174.232 2.454 3.745 5.945 5.25.831.359 1.48.573 1.986.734.834.265 1.593.228 2.193.138.669-.1 2.054-.84 2.344-1.65.29-.81.29-1.504.203-1.65-.087-.145-.319-.232-.666-.406z"/>
+  </svg>
+</a>
+
+<div id="toast" role="status"></div>
+
+<script>
+const menu = document.querySelector('.menu'), nav = document.querySelector('nav');
+menu.onclick = () => nav.classList.toggle('open');
+document.querySelectorAll('nav a').forEach(a => a.onclick = () => nav.classList.remove('open'));
+window.addEventListener('scroll', () => document.getElementById('header').classList.toggle('scrolled', scrollY > 20));
+const params = new URLSearchParams(location.search);
+if (params.get('submitted')) {
+  const t = document.getElementById('toast');
+  t.textContent = 'Thank you. Your submission has been sent to SCAN.';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 5000);
+}
+</script>
+
+</body>
+</html>
