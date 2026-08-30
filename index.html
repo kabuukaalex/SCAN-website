@@ -7,12 +7,20 @@
 <meta name="theme-color" content="#0b6330">
 <title>SCAN | Ssembabule Community Action Network</title>
 <link rel="icon" href="assets/scan-logo.png" type="image/png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"> <link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="SCAN">
+<link rel="apple-touch-icon" href="assets/scan-logo.png">
 <meta property="og:title" content="SCAN | Ssembabule Community Action Network">
 <meta property="og:description" content="Connecting Communities. Creating Change. Community-led development in Ssembabule District, Uganda.">
 <meta property="og:image" content="assets/scan-logo.png">
 <meta property="og:type" content="website">
 </head>
+  <script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+  </script>
 <body>
 <div class="topbar"><div class="wrap topbar-inner"><span>Connecting Communities. Creating Change.</span></div></div>
 
