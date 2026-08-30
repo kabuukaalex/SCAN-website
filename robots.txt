@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://scan-website.pages.dev/sitemap.xml
